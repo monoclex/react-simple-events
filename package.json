@@ -1,0 +1,78 @@
+{
+  "name": "react-simple-events",
+  "version": "1.0.0",
+  "description": "Simple easy events for React that gets out of your way.",
+  "keywords": [
+    "react",
+    "event-driven",
+    "events",
+    "useEvent",
+    "nanoevents"
+  ],
+  "author": "SirJosh3917",
+  "license": "MIT",
+  "homepage": "https://github.com/SirJosh3917/react-simple-events#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirJosh3917/react-simple-events.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SirJosh3917/react-simple-events/issues"
+  },
+  "files": [
+    "index.cjs",
+    "index.d.ts",
+    "index.mjs",
+    "package.json",
+    "README.md"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.mjs"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/index.cjs",
+      "limit": "1 kB"
+    },
+    {
+      "path": "./dist/index.mjs",
+      "limit": "1 kB"
+    }
+  ],
+  "scripts": {
+    "build": "node --experimental-import-meta-resolve build.mjs",
+    "size": "size-limit",
+    "quality": "package-check",
+    "test": "jest"
+  },
+  "dependencies": {
+    "nanoevents": "^6.0.2"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@skypack/package-check": "^0.2.2",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@types/jest": "^27.4.1",
+    "@types/react": "16.8.0",
+    "@types/testing-library__jest-dom": "^5.14.3",
+    "esbuild": "^0.14.28",
+    "jest": "^27.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "size-limit": "^7.0.8",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}
